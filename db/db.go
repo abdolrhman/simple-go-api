@@ -7,6 +7,7 @@ import (
 	"github.com/fatih/color"
 	middlewares "github.com/umangraval/Go-Mongodb-REST-boilerplate/handlers"
 	"github.com/umangraval/Go-Mongodb-REST-boilerplate/models"
+	"go.mongodb.org/mongo-driver/bson"
 	"go.mongodb.org/mongo-driver/mongo"
 	"go.mongodb.org/mongo-driver/mongo/options"
 	"io/ioutil"
@@ -33,8 +34,11 @@ func Dbconnect() *mongo.Client {
 	}
 	color.Green("⛁ Connected to Database")
 
-	loadDataFromJsonFile(err, client)
-
+	collection := client.Database("wajve").Collection("trivia")
+	count, err := collection.CountDocuments(context.TODO(), bson.D{{}})
+	if count < 1 {
+		loadDataFromJsonFile(err, client)
+	}
 	return client
 }
 
