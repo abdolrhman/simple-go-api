@@ -4,7 +4,7 @@ import (
 	"encoding/json"
 	"net/http"
 
-	"github.com/umangraval/Go-Mongodb-REST-boilerplate/models"
+	"github.com/abdolrhman/simple-go-api/models"
 )
 
 // AuthorizationResponse -> response authorize

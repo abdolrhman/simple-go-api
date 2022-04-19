@@ -1,4 +1,4 @@
-module github.com/umangraval/Go-Mongodb-REST-boilerplate
+module github.com/abdolrhman/simple-go-api
 
 go 1.15
 

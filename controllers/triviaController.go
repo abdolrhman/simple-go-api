@@ -3,9 +3,9 @@ package controllers
 import (
 	"context"
 	"fmt"
-	"github.com/umangraval/Go-Mongodb-REST-boilerplate/db"
-	middlewares "github.com/umangraval/Go-Mongodb-REST-boilerplate/handlers"
-	"github.com/umangraval/Go-Mongodb-REST-boilerplate/models"
+	"github.com/abdolrhman/simple-go-api/db"
+	middlewares "github.com/abdolrhman/simple-go-api/handlers"
+	"github.com/abdolrhman/simple-go-api/models"
 	"go.mongodb.org/mongo-driver/bson"
 	"log"
 	"net/http"

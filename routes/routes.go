@@ -1,8 +1,8 @@
 package routes
 
 import (
+	"github.com/abdolrhman/simple-go-api/controllers"
 	"github.com/gorilla/mux"
-	"github.com/umangraval/Go-Mongodb-REST-boilerplate/controllers"
 )
 
 // Routes -> define endpoints
