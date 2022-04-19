@@ -30,6 +30,15 @@ $ cd simple-go-api.git
 $ go mod vendor
 ```
 
+## Architecture 
+- a function run every time the application starts
+- fill the database with the records on the josn
+  - if no any
+- API that grapes the data from mongodb
+- The API accepts parameters if given, that creat that construct the query options
+- nginx and workflow supported
+- integration test supported
+
 ## Development
 
 ### Start dev server
