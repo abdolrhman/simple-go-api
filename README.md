@@ -1,4 +1,4 @@
-# simple-go-api-wajve
+# simple-go-api
 
 
 ![Build](https://github.com/umangraval/Go-Mongodb-REST-boilerplate/workflows/Go/badge.svg)
